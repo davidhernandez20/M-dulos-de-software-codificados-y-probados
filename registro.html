@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="registro.css">
+  <title>Formulario de Registro</title>
+</head>
+<body>
+    <h2>Formulario</h2>
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form action="procesar_registro.php" method="post">
+                <h1>Crea una cuenta</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>o usa tu e-mail para registrarte</span>
+                <input type="text" placeholder="Nombre" />
+                <input type="email" placeholder="E-mail" />
+                <input type="password" placeholder="Contraseña" />
+                <button>Registrarse</button>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form action="#">
+                <h1>Ingresar</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>o usa tu cuenta</span>
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Contraseña" />
+                <a href="#">Olvidaste tu contraseña?</a>
+                <button>Entrar</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Bienvenido!</h1>
+                    <p>Para seguir conectado con nosotros por favor ingresa tu información personal</p>
+                    <button class="ghost" id="signIn">Entrar</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Hola, Amigo!</h1>
+                    <p>Entra tu información detatallada y empieza el viaje con nosotros</p>
+                    <button class="ghost" id="signUp">Registrarse</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="registro.js"></script>
+</body>
+</html>
